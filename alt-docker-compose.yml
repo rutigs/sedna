@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:5
+    restart: always
+    ports:
+      - 6379:6379
+
+  sedna:
+    build:
+      context: ./
+    ports:
+        - 8080:3000
+    depends_on:
+      - redis
