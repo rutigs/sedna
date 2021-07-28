@@ -66,5 +66,7 @@ The application is built using `Make` targets for building and running the vario
 `make compose` will run both `docker-compose build` and `docker-compose up` to run the entire setup. If you'd like to run the alternate docker compose setup simply run
 
 ```
+# Runs docker-compose build and docker-compose up
+$ make compose
 $ docker-compose -f alt-docker-compose.yml up
 ```
