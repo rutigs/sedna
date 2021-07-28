@@ -68,5 +68,6 @@ The application is built using `Make` targets for building and running the vario
 ```
 # Runs docker-compose build and docker-compose up
 $ make compose
+# OR alternative setup
 $ docker-compose -f alt-docker-compose.yml up
 ```
